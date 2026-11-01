@@ -780,7 +780,7 @@ button {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
@@ -792,14 +792,14 @@ button {
 }
 
 .card-tall {
-    height: 420px;
+    height: 480px;
 }
 
 .card-tall .about-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 20%;
+    object-position: center center;
 }
 
 .about-img-caption {
@@ -826,15 +826,6 @@ button {
     color: var(--rose-primary);
     font-weight: 600;
     letter-spacing: 0.05em;
-}
-
-.card-wide {
-    height: 220px;
-}
-
-.about-grid .card-wide:nth-child(2),
-.about-grid .card-wide:nth-child(3) {
-    height: 200px;
 }
 
 .card-wide .about-img {
