@@ -2525,6 +2525,34 @@ button {
         bottom: 75px;
         right: 15px;
     }
+
+    /* --- Sticky navbar on mobile --- */
+    .main-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    /* --- Hero: image first, then text --- */
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .hero-visual {
+        order: -1;
+    }
+
+    .hero-content {
+        order: 1;
+    }
+
+    /* --- Hide hero CTA buttons on mobile --- */
+    .hero-buttons {
+        display: none;
+    }
     
     .hero-section {
         padding: 3rem 0 4rem;
